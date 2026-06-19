@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tanfullstack.courseapp.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_module"
+            app:destination="@id/moduleFragment" />
+        <action
+            android:id="@+id/action_home_to_progress"
+            app:destination="@id/progressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moduleFragment"
+        android:name="com.tanfullstack.courseapp.ui.lesson.ModuleFragment"
+        android:label="Module">
+        <argument
+            android:name="moduleId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_module_to_lesson"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.tanfullstack.courseapp.ui.lesson.LessonFragment"
+        android:label="Lesson">
+        <argument
+            android:name="lessonId"
+            app:argType="string" />
+        <argument
+            android:name="moduleId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_lesson_to_quiz"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_lesson_to_challenge"
+            app:destination="@id/challengeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.tanfullstack.courseapp.ui.quiz.QuizFragment"
+        android:label="Quiz">
+        <argument
+            android:name="lessonId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/challengeFragment"
+        android:name="com.tanfullstack.courseapp.ui.challenge.ChallengeFragment"
+        android:label="Challenge">
+        <argument
+            android:name="lessonId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.tanfullstack.courseapp.ui.progress.ProgressFragment"
+        android:label="Progress" />
+
+</navigation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FullStack Course</string>
+    <string name="home_greeting">Welcome back, Developer! 👋</string>
+    <string name="home_subtitle">Continue your learning journey</string>
+    <string name="modules_title">Course Modules</string>
+    <string name="progress_title">Your Progress</string>
+    <string name="btn_start_lesson">Start Lesson</string>
+    <string name="btn_take_quiz">Take Quiz</string>
+    <string name="btn_challenge">Try Challenge</string>
+    <string name="btn_view_solution">View Solution</string>
+    <string name="btn_next_lesson">Next Lesson →</string>
+    <string name="completed">✅ Completed</string>
+    <string name="xp_label">XP Earned</string>
+</resources>

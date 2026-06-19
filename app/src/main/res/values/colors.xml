@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Dev Theme -->
+    <color name="colorBackground">#0D1117</color>
+    <color name="colorSurface">#161B22</color>
+    <color name="colorSurfaceVariant">#21262D</color>
+    <color name="colorPrimary">#58A6FF</color>
+    <color name="colorPrimaryVariant">#1F6FEB</color>
+    <color name="colorSecondary">#3FB950</color>
+    <color name="colorAccent">#F78166</color>
+    <color name="colorTextPrimary">#E6EDF3</color>
+    <color name="colorTextSecondary">#8B949E</color>
+    <color name="colorDivider">#30363D</color>
+    <color name="colorSuccess">#3FB950</color>
+    <color name="colorError">#F85149</color>
+    <color name="colorWarning">#D29922</color>
+    <color name="colorXP">#FFD700</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <!-- Module Colors -->
+    <color name="colorHtml">#E44D26</color>
+    <color name="colorCss">#264DE4</color>
+    <color name="colorJs">#F7DF1E</color>
+    <color name="colorReact">#61DAFB</color>
+    <color name="colorNode">#68A063</color>
+    <color name="colorDb">#336791</color>
+    <color name="colorGit">#F05032</color>
+    <color name="colorDeploy">#9B59B6</color>
+</resources>

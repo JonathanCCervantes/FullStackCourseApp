@@ -8,9 +8,9 @@ object CourseData {
 
         Module(
             id = "module_intro",
-            title = "Getting Started",
-            description = "Welcome to the Full Stack Web Development course. Start here!",
-            icon = "👋",
+            title = "Introduction",
+            description = "Start your full-stack journey. Learn the basics of the web and set up your tools.",
+            icon = "🏁",
             color = "#4CAF50",
             order = 1,
             lessons = listOf(
@@ -21,73 +21,51 @@ object CourseData {
         ),
 
         Module(
-            id = "module_html",
-            title = "HTML Fundamentals",
-            description = "Build the structure of the web. Learn tags, elements, and semantic HTML.",
-            icon = "🌐",
+            id = "module_frontend_basics",
+            title = "Frontend Basics",
+            description = "Master the core languages of the web: HTML, CSS, and JavaScript.",
+            icon = "🎨",
             color = "#E44D26",
             order = 2,
             lessons = listOf(
-                Lesson("html_01", "HTML Basics", "03-html-fundamentals.md", 15, true, true, 1)
+                Lesson("html_01", "HTML Fundamentals", "03-html-fundamentals.md", 20, true, true, 1),
+                Lesson("css_01", "CSS Fundamentals", "04-css-fundamentals.md", 20, true, true, 2),
+                Lesson("js_01", "JavaScript Fundamentals", "05-javascript-fundamentals.md", 25, true, true, 3)
             )
         ),
 
         Module(
-            id = "module_css",
-            title = "CSS Styling",
-            description = "Make the web beautiful. Master selectors, layouts, and responsive design.",
-            icon = "🎨",
-            color = "#264DE4",
-            order = 3,
-            lessons = listOf(
-                Lesson("css_01", "CSS Fundamentals", "04-css-fundamentals.md", 20, true, true, 1)
-            )
-        ),
-
-        Module(
-            id = "module_js",
-            title = "JavaScript",
-            description = "Add interactivity to the web. From variables to async programming.",
-            icon = "⚡",
-            color = "#F7DF1E",
-            order = 4,
-            lessons = listOf(
-                Lesson("js_01", "JavaScript Fundamentals", "05-javascript-fundamentals.md", 25, true, true, 1)
-            )
-        ),
-
-        Module(
-            id = "module_git",
-            title = "Git & Version Control",
-            description = "Track changes, collaborate, and use GitHub like a pro.",
+            id = "module_vcs",
+            title = "Version Control",
+            description = "Learn to track your code and collaborate using Git.",
             icon = "🔀",
             color = "#F05032",
-            order = 5,
+            order = 3,
             lessons = listOf(
-                Lesson("git_01", "Git Basics", "06-git-version-control.md", 15, true, false, 1)
+                Lesson("git_01", "Git & Version Control", "06-git-version-control.md", 15, true, false, 1)
             )
         ),
 
         Module(
-            id = "module_node",
-            title = "Node.js & Express",
-            description = "Build the backend. Servers, routing, and APIs.",
+            id = "module_backend_basics",
+            title = "Backend with Node.js",
+            description = "Build servers and learn the fundamentals of Node.js and Express.",
             icon = "🟢",
             color = "#68A063",
-            order = 6,
+            order = 4,
             lessons = listOf(
                 Lesson("node_01", "Node.js Fundamentals", "07-nodejs-fundamentals.md", 20, true, true, 1),
-                Lesson("node_02", "Express.js Fundamentals", "08-expressjs-fundamentals.md", 20, true, true, 2)
+                Lesson("express_01", "Express.js Fundamentals", "08-expressjs-fundamentals.md", 20, true, true, 2)
             )
         ),
 
         Module(
-            id = "module_db",
-            title = "Databases",
-            description = "Store and query data. MongoDB and Mongoose basics.",
+            id = "module_databases",
+            title = "Databases & Integration",
+            description = "Learn to store data in MongoDB and connect it to your backend.",
             icon = "🗄️",
             color = "#336791",
-            order = 7,
+            order = 5,
             lessons = listOf(
                 Lesson("db_01", "MongoDB Fundamentals", "09-mongodb-fundamentals.md", 20, true, true, 1),
                 Lesson("db_02", "Connecting Express & MongoDB", "10-connecting-express-mongodb.md", 25, true, true, 2)
@@ -95,12 +73,12 @@ object CourseData {
         ),
 
         Module(
-            id = "module_frontend",
+            id = "module_frontend_integration",
             title = "Frontend Integration",
-            description = "Connect your frontend to the backend APIs.",
+            description = "Bring it all together by connecting your UI to your backend APIs.",
             icon = "🔗",
             color = "#61DAFB",
-            order = 8,
+            order = 6,
             lessons = listOf(
                 Lesson("front_01", "Frontend API Integration", "11-frontend-api-integration.md", 25, true, true, 1)
             )
@@ -108,11 +86,11 @@ object CourseData {
 
         Module(
             id = "module_advanced",
-            title = "Advanced Topics",
-            description = "Authentication, Testing, and Capstone project.",
+            title = "Advanced Full Stack",
+            description = "Secure your app, learn testing, and build your capstone project.",
             icon = "🛠️",
             color = "#9C27B0",
-            order = 9,
+            order = 7,
             lessons = listOf(
                 Lesson("adv_01", "Authentication", "12-authentication.md", 30, true, true, 1),
                 Lesson("adv_02", "Testing & Debugging", "13-testing-debugging.md", 20, true, false, 2),
@@ -121,12 +99,12 @@ object CourseData {
         ),
 
         Module(
-            id = "module_deploy",
-            title = "Deployment & Next Steps",
-            description = "Get your app live and plan your future career.",
+            id = "module_deployment",
+            title = "Launch",
+            description = "Deploy your application to the world and plan your next steps.",
             icon = "🚀",
             color = "#9B59B6",
-            order = 10,
+            order = 8,
             lessons = listOf(
                 Lesson("deploy_01", "Next Steps & Deployment", "15-next-steps-and-deployment.md", 20, false, false, 1)
             )

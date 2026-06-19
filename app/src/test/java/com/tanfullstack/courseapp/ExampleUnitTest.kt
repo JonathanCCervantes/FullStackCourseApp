@@ -1,4 +1,4 @@
-package com.jonathan.fullstackcourseapp
+package com.tanfullstack.courseapp
 
 import org.junit.Test
 

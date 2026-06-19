@@ -52,4 +52,14 @@ class ProgressRepository(context: Context) {
     fun isChallengeComplete(challengeId: String): Boolean {
         return getProgress().completedChallenges.contains(challengeId)
     }
+
+    fun resetModuleProgress(lessonIds: List<String>) {
+        val progress = getProgress()
+        lessonIds.forEach { lessonId ->
+            progress.completedLessons.remove(lessonId)
+            // Note: We don't remove XP here to avoid negative totalXP complexity, 
+            // but we clear the completion status.
+        }
+        saveProgress(progress)
+    }
 }

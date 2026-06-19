@@ -88,6 +88,16 @@
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/colorPrimary" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNextLesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_next_lesson"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/colorSecondary" />
+
     </LinearLayout>
 
 </LinearLayout>

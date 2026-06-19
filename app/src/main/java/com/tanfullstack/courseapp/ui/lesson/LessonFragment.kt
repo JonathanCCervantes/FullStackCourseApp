@@ -13,6 +13,9 @@ import com.tanfullstack.courseapp.data.repository.ProgressRepository
 import com.tanfullstack.courseapp.databinding.FragmentLessonBinding
 import com.tanfullstack.courseapp.utils.MarkdownLoader
 import io.noties.markwon.Markwon
+import io.noties.markwon.ext.strikethrough.StrikethroughPlugin
+import io.noties.markwon.ext.tables.TablePlugin
+import io.noties.markwon.html.HtmlPlugin
 
 class LessonFragment : Fragment() {
 
@@ -39,8 +42,13 @@ class LessonFragment : Fragment() {
         binding.toolbar.setNavigationIcon(android.R.drawable.ic_media_previous)
         binding.toolbar.setNavigationOnClickListener { findNavController().popBackStack() }
 
-        // Render Markdown lesson content
-        val markwon = Markwon.builder(requireContext()).build()
+        // Configure Markwon with essential plugins (Tables, HTML, Strikethrough)
+        val markwon = Markwon.builder(requireContext())
+            .usePlugin(TablePlugin.create(requireContext()))
+            .usePlugin(HtmlPlugin.create())
+            .usePlugin(StrikethroughPlugin.create())
+            .build()
+
         val markdown = MarkdownLoader.loadFromAssets(requireContext(), lesson.markdownFile)
         markwon.setMarkdown(binding.tvLessonContent, markdown)
 
